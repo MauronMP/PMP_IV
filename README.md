@@ -1,6 +1,6 @@
 # Repositorio PMP_IV 
 ***
-La idea principal ahora mismo es trabajar con los elementos de markdown
+//La idea principal ahora mismo es trabajar con los elementos de markdown
 ***
 Siendo asi principalmente la idea de crear varios elementos que pertenecen al **markdown**
 
