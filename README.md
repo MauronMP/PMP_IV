@@ -10,7 +10,7 @@ Siendo asi principalmente la idea de crear varios elementos que pertenecen al **
 **Desde objetivo 0 hago un pull request**
 
 ***
-## :bookmark_tabs: ** Lista de comprobación: **
+# :bookmark_tabs: Lista de comprobación: 
 
 
 - ¿Se trata de un problema real del que se tenga conocimiento personal?
