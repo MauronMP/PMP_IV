@@ -1,6 +1,17 @@
 # Repositorio PMP_IV en el curso 22-23
-# :bookmark_tabs: Lista de comprobación: 
 
+***
+# :thought_balloon: Problema a resolver 
+Actualmete existen muchas empresas que tienen comedores y espacios habilitados con menús para los trabajadores, pero no suelen tener en cuenta <br/>
+que exiten gente alergena a distintos alimentos, enfermedades, etc. En este caso se quiere tratar con las personas celiacas. <br/>
+
+La idea sería poder implementar un catálogo de recetas, platos, ideas, datos alimenticios entre otros sobre las posibles recetas <br/>
+para poder incluir en los menús de las empresas o por otro lado para usuarios normales.
+
+Aun siendo para empresas como usuarios, esto requiere un despliege en la nube, a priori puede parecer una idea que no soluciona un problema muy frecuente <br/>
+pero en mi experiencia en una empresa en el extranjero, este caso se daba muchas veces y con esta idea podía ayudar a este tipo de personas.
+***
+# :bookmark_tabs: Lista de comprobación: 
 
 - :heavy_check_mark: ¿Se trata de un problema real del que se tenga conocimiento personal? <br/>
   Si, se trata de un problema que tuve delante mia hace unos años durante unas prácticas en otro país, muchos de los integrantes de la empresa en la que estaba
