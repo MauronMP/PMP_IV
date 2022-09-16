@@ -25,3 +25,4 @@ pero en mi experiencia en una empresa en el extranjero, este caso se daba muchas
     Si, ya que se está enfocando en un público muy concreto, siendo en este caso para celiacos y no para cualquier persona
 
 - :heavy_check_mark: ¿Se ha incluído la configuración del repositorio y se ha enlazado desde el `README`?
+    Si, se ha configurado correctamente con la clase de SSH
