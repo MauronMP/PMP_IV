@@ -2,13 +2,24 @@
 # Repositorio PMP_IV en el curso 22-23
 # :thought_balloon: Problema a resolver 
 
-    La idea principal a tratar sería la gestión, coordinación y planificación de un gimnasio.
+    Siguiendo el "desing-thinking" para poder diseñar una aplicación desde 0, se ven los 3 puntos principales a tratar:
 
-    Actualmente dentro de un gimnasio existen distintos tipos de tarifas, planificaciones, rutinas de entrenamientos enfocadas a distintos tipos,
-    siendo por ejemplo para ganar masa muscular, hipertrofia, maximizar resultados... todo dependiendo de los dias de entrenamiento, peso, altura, edad, género.
-    Para ello la idea sería crear una API para poder regular todo esto.
+    1. **Empatizar**. Problema a resolver
 
-    Se trata de un tema que puede enfocarse a muchos lugares, puesto que en cada pueblo y ciudad hay muchos gimnasios.
+    Planificación y organización de un gimnasio de cara a los usuarios.
+
+    2. **Definir**. ¿Cuál es el problema exactamente?
+
+    El problema es poder gestionar la carga de los usuarios de un gimnasio que requieren de distintas rutinas, dietas, actividades dependiendo 
+    de su edad, peso, género, frecuencia de actividad entre otros aspectos principales.
+
+    El cliente final, recibe una planificación y gestión de sus rutinas, dietas, actividades también teniendo en cuenta las tarifas que paga.
+    Esto será flexible para todos los clientes y no genérico.
+
+    3. **Idear**. Pensar en qué productos solucionará este problema.
+
+    La idea principal sería poder crear una API capaz de gestionar y organizar todas estas ideas para poder ser escalable y utilizada en varios gimnasios.
+
 
 ***
 # :bookmark_tabs: Lista de comprobación: 
