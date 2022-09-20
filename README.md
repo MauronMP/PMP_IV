@@ -2,44 +2,49 @@
 # Repositorio PMP_IV en el curso 22-23
 # :thought_balloon: Problema a resolver 
 
-    Siguiendo el "desing-thinking" para poder diseñar una aplicación desde 0, se ven los 3 puntos principales a tratar:
+    1. **Empatizar**. Problema a resolver    
 
-    1. **Empatizar**. Problema a resolver
+    Predecir la probabilidad de que sufran incendios las zonas forestales y residenciales.
 
-    Creación de una API para facilitar las actividades grupales de los centro deportivos.
-    
     2. **Definir**. ¿Cuál es el problema exactamente?
 
-    Se ha preguntado a la dueña de un gimnasio si tiene algún problema o necesitaba de algun software para mejorar el centro.
+    Durente el 2022 hasta la fecha del 30 de agosto, han habido 63 grandes incendios según muestra [este enlace](https://www.rtve.es/noticias/20220902/verano-2022-fuego-grandes-incendios-hectareas/2399690.shtml#:~:text=Los%20grandes%20incendios%20%E2%80%93aquellos%20que,sobre%20Incendios%20Forestales%20(EFFIS).)
 
-    Tras preguntarle, dijo que necesitaba una API para usarla en las pantallas del gimnasio para poder mostrar un listado de los ejercicios a realizar, estos ejercicios tenían un tiempo de realización, un video por cada ejercicio y que pudiera disponer de un menu para poder retroceder, avanzar, pausar y crear listas de distintas rutinas dependiendo de los grupos que tuvivera el monitor.
+    Para poder intentar solventar este problema, la idea sería poder predecir en qué zonas forestales puede generarse más riesgo de incendio.
 
-    Esto asegura la dueña que le resultaría útil, puesto que de esta manera los monitores del gimnasio estarían enfocados en los clientes, comprobando que vayan al ritmo de la sesión, realicen bien los ejercicios y pueda atenderlos sin necesidad de estar pendiente a las pantallas.
+    Tratando los siguientes puntos:
 
-    Además asegura que si se realizara esto, estaría interesada en usar la API en su centro deportivo.
+    - ¿Quién usará esta aplicación?
 
-    Sería entonces poder desplegarlo en las pantallas que dispone el centro deportivo con una serie de ejercicios interactivos, 
-    marcando el tiempo de realización de cada ejercicio, de manera interactiva, sin que sean imagenes estáticas o sólo imagenes en formato "GIF".    
+    Esto ayudaría a los ganaderos, agricultores, personas corrientes que viven en el campo. 
+
+    - ¿Sirve su despliegue en la nube?
+
+    Si, ya que se trataría de un software para distintos clientes y no puede estar centralizado en un sólo sitio.
+
 
     3. **Idear**. Pensar en qué productos solucionará este problema.
 
-    La idea principal sería poder crear una API capaz de solventar el problema mencionado.
+    Un software capaz de predecir a lo largo del día, semana(no sé ciertamente si es posible predecir una semana), el porcentaje de riesgo de incendio en la zona en la que esté el cliente final.
+
+    
 
 
 ***
 # :bookmark_tabs: Lista de comprobación: 
 
 - :heavy_check_mark: ¿Se trata de un problema real del que se tenga conocimiento personal? <br/>
-    Si, llevo entrenando dos años y tengo conocimientos de los distintos perfiles de usuarios que pueden darse, sus condiciones y posibilidades.
+    
+    Si, puesto que trata el tema de incendios y es un tema que repercute y ocurre en toda la zona de España, por ejemplo el incendio que hubo en Granada recientemente.
 
 
 - :heavy_check_mark: ¿Se trata de un problema que para solucionar requiera el despliegue de una aplicación en la nube? <br/>
-    Si, puesto que para cada persona, requiere distintas rutinas, datos de los mismos y necesita estar en la nube.
-
+    
+    Sí, no puede estar centralizado, ya que la idea es distribuirlo a clientes finales como ganaderos, agricultores y residentes.
 
 - :heavy_check_mark: ¿La solución requiere una cierta cantidad de lógica de negocio, en vez solucionarse sólo almacenando y buscando?  <br/>
-    Si, porque no se trata de un catálogo de busca simple, si no, de una gestión de un gimnasio enfocado a los usuarios del gimnasio. 
-    Los usuarios beneficiados serían los clientes del gimnasio, pero el producto es para el dueño/a del gimnasio.
+    
+    Si, ya que se necesita realizar una serie de cálculos, transformación de los datos y acotarlos a las zonas de los clientes, no es un "almacena y busca" como tal.
 
 - :heavy_check_mark: ¿Se ha incluído la configuración del repositorio y se ha enlazado desde el `README`?
     Si, se ha configurado correctamente con la clase de SSH
