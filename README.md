@@ -6,19 +6,24 @@
 
     1. **Empatizar**. Problema a resolver
 
-    Planificación y organización de un gimnasio de cara a los usuarios.
-
+    Creación de una API para facilitar las actividades grupales de los centro deportivos.
+    
     2. **Definir**. ¿Cuál es el problema exactamente?
 
-    El problema es poder gestionar la carga de los usuarios de un gimnasio que requieren de distintas rutinas, dietas, actividades dependiendo 
-    de su edad, peso, género, frecuencia de actividad entre otros aspectos principales.
+    Se ha preguntado a la dueña de un gimnasio si tiene algún problema o necesitaba de algun software para mejorar el centro.
 
-    El cliente final, recibe una planificación y gestión de sus rutinas, dietas, actividades también teniendo en cuenta las tarifas que paga.
-    Esto será flexible para todos los clientes y no genérico.
+    Tras preguntarle, dijo que necesitaba una API para usarla en las pantallas del gimnasio para poder mostrar un listado de los ejercicios a realizar, estos ejercicios tenían un tiempo de realización, un video por cada ejercicio y que pudiera disponer de un menu para poder retroceder, avanzar, pausar y crear listas de distintas rutinas dependiendo de los grupos que tuvivera el monitor.
+
+    Esto asegura la dueña que le resultaría útil, puesto que de esta manera los monitores del gimnasio estarían enfocados en los clientes, comprobando que vayan al ritmo de la sesión, realicen bien los ejercicios y pueda atenderlos sin necesidad de estar pendiente a las pantallas.
+
+    Además asegura que si se realizara esto, estaría interesada en usar la API en su centro deportivo.
+
+    Sería entonces poder desplegarlo en las pantallas que dispone el centro deportivo con una serie de ejercicios interactivos, 
+    marcando el tiempo de realización de cada ejercicio, de manera interactiva, sin que sean imagenes estáticas o sólo imagenes en formato "GIF".    
 
     3. **Idear**. Pensar en qué productos solucionará este problema.
 
-    La idea principal sería poder crear una API capaz de gestionar y organizar todas estas ideas para poder ser escalable y utilizada en varios gimnasios.
+    La idea principal sería poder crear una API capaz de solventar el problema mencionado.
 
 
 ***
