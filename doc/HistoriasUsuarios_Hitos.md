@@ -1,0 +1,18 @@
+# Listado de las historias de usuarios e hitos creados.
+
+**- Historias de usuarios:**
+___
+
+   - [[HU0] Como usuario quiero saber qué posibilidad hay que de haya un incendio.](https://github.com/MauronMP/PMP_IV/issues/5).
+   - [[HU1] Como usuario, quiero estar notificado en caso de que haya un riesgo alto.](https://github.com/MauronMP/PMP_IV/issues/6).
+
+**- Milestone:**
+___
+
+   - [[M0] Generar un csv.](https://github.com/MauronMP/PMP_IV/milestone/1).
+   - [[M1] Crear clase coordenada, fecha, FWI, temperatura, humedad, viento, lluvia y superficie.](https://github.com/MauronMP/PMP_IV/milestone/2).
+   - [[M2] Crear una clase que contenga las del M0.](https://github.com/MauronMP/PMP_IV/milestone/3).
+   - [[M3] Recoger datos](https://github.com/MauronMP/PMP_IV/milestone/4).
+   - [[M4] Entrenar una IA.](https://github.com/MauronMP/PMP_IV/milestone/5).
+   - [[M5] Dar resultados.](https://github.com/MauronMP/PMP_IV/milestone/6).
+
