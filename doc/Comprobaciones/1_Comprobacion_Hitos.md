@@ -14,7 +14,7 @@
     
 - ¿El milestone 0 tiene asignada alguna historia de usuario?
     
-    Si, la [HU0], ya que, para poder tener los datos que quiere el usuario, se necesita de un CSV para poder realizar las operaciones necesarias.
+    Si, la [[HU0](https://github.com/MauronMP/PMP_IV/issues/5)], ya que, para poder tener los datos que quiere el usuario, se necesita de un CSV para poder realizar las operaciones necesarias.
     
 - ¿El milestone 0 corresponde con lo mencionado varias veces en clase, y en concreto con lo que se solicita en el objetivo siguiente?
     
@@ -22,7 +22,7 @@
     
 - ¿Todos los milestones describen correctamente un producto, y no un concepto vago, una funcionalidad o una tarea?
     
-    Sí, es verdad que el [M4] requiere de más desarrollo, pero para empezar está bien, a posteriori se detallará con más.
+    Sí, es verdad que el [[M4](https://github.com/MauronMP/PMP_IV/milestone/5)] requiere de más desarrollo, pero para empezar está bien, a posteriori se detallará con más.
     
 - ¿Los milestones son graduales, o hay un salto grande entre ellos?
     
@@ -30,7 +30,7 @@
     
 - ¿Los milestones iniciales son internos, y hay a continuación milestones o productos externos?
     
-     El [M0], [M1], [M2], [M3], son internos, el [M5] sería el externo
+     El [[M0](https://github.com/MauronMP/PMP_IV/milestone/1)], [[M1](https://github.com/MauronMP/PMP_IV/milestone/2)], [[M2](https://github.com/MauronMP/PMP_IV/milestone/3)], [[M3](https://github.com/MauronMP/PMP_IV/milestone/4)], son internos, el [[M5](https://github.com/MauronMP/PMP_IV/milestone/6)] sería el externo
     
 - ¿Los milestones son mínimos, es decir, incluyen un producto mínimamente viable para poder avanzar?
     
