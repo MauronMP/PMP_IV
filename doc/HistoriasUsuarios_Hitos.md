@@ -3,8 +3,8 @@
 **- Historias de usuarios:**
 ___
 
-   - [[HU0] Como usuario quiero saber qué posibilidad hay que de haya un incendio.](https://github.com/MauronMP/PMP_IV/issues/5).
-   - [[HU1] Como usuario, quiero estar notificado en caso de que haya un riesgo alto.](https://github.com/MauronMP/PMP_IV/issues/6).
+   - [[HU0] Como usuario residente en zonas forestales, necesitaría estar informado de los riesgos de incendio que puede haber donde vivo.](https://github.com/MauronMP/PMP_IV/issues/5).
+   - [[HU1] Como usuario, quiero saber si pudiera haber un incendio quiero poder tener tiempo para reaccionar.](https://github.com/MauronMP/PMP_IV/issues/6).
 
 **- Milestone:**
 ___
