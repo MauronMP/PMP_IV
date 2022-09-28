@@ -28,7 +28,10 @@ Si, ya que se trataría de un software para distintos clientes y no puede estar 
 
 3. **Idear**. Pensar en qué productos solucionará este problema.
 
-Un software capaz de predecir a lo largo del día, semana(no sé ciertamente si es posible predecir una semana), el porcentaje de riesgo de incendio en la zona en la que esté el cliente final.
+Un software capaz de predecir, el porcentaje de riesgo de incendio en la zona en la que esté el cliente final.
+
+Para ello se recopilan datos, se transforman para posteriormente con una IA estimar la probabilidad de incendio que puede tener en esa zona.
+Tanto la recopilación de datos, como transformación e IA se especifican en los milestones.
 
 ___
  
