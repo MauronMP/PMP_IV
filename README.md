@@ -6,7 +6,7 @@
 
 1. **Empatizar**. Problema a resolver    
 
-Predecir la probabilidad de que sufran incendios las zonas forestales y residenciales.
+Predecir la probabilidad de que sufran incendios las zonas forestales y residenciales con una escala de niveles del [plan INFOEX](https://www.infoex.info/planes/infoex/#:~:text=Niveles%20de%20incendios&text=Incendios%20de%20nivel%200:%20los,bienes%20de%20car%C3%A1cter%20no%20forestal.).
 
 2. **Definir**. ¿Cuál es el problema exactamente?
 
@@ -19,7 +19,8 @@ Tratando los siguientes puntos:
 
 - ¿Quién usará esta aplicación?
 
-Esto ayudaría a los ganaderos, agricultores, personas corrientes que viven en el campo. 
+Guardas forestales u otro organismo de la autoridad que respecte a las zonas forestales. 
+Estos reciben un nivel alerta de incendio, para tomar las medidas necesarias.
 
 - ¿Sirve su despliegue en la nube?
 
@@ -28,17 +29,14 @@ Si, ya que se trataría de un software para distintos clientes y no puede estar 
 
 3. **Idear**. Pensar en qué productos solucionará este problema.
 
-Un software capaz de predecir, el porcentaje de riesgo de incendio en la zona en la que esté el cliente final.
+Un software capaz de predecir, el nivel de riesgo que puede haber en las zonas en las que está.
 
-Para ello se recopilan datos, se transforman para posteriormente con una IA estimar la probabilidad de incendio que puede tener en esa zona.
+Para ello se usarán datos de un csv (estos datos son validos), se transforman para posteriormente con una IA estimar la probabilidad de incendio que puede tener en esa zona y determinar las zonas que pueden tener vecinos con riesgo de incendio, una vez se ha estimado los vecinos, se decide el nivel de incendio.
 Tanto la recopilación de datos, como transformación e IA se especifican en los milestones.
 
 ___
  
- # Milestones, HU y User journey.
-
-Se han creado dos ficheros que detallan:
+ # Milestones e HU.
     
 - [Historias e hitos](https://github.com/MauronMP/PMP_IV/blob/Objetivo-1/doc/HistoriasUsuarios_Hitos.md)
-- [User journey](https://github.com/MauronMP/PMP_IV/blob/Objetivo-1/doc/User_Journey.md)
     

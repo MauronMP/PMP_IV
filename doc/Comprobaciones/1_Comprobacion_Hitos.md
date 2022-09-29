@@ -6,7 +6,7 @@
     
 - ¿Los milestones están ordenados correctamente, de forma que el 1 o 0 sea lo primero que hay que empezar a publicar?.
     
-    Si, el milestone 0 es el más sencillo, puesto que se trata de crear una clase, luego recoger datos y por último utilizar una IA para hacer una predicción.
+    Si, el milestone 0 es el más sencillo, puesto que se trata de crear una clase, luego a partir de este se van haciendo el 1 y el 2.
     
 - ¿Todos los milestones se construyen sobre el anterior, teniendo un orden lógico el desarrollo?
     
@@ -14,7 +14,7 @@
     
 - ¿El milestone 0 tiene asignada alguna historia de usuario?
     
-    Si, la [[HU0](https://github.com/MauronMP/PMP_IV/milestone/2)], ya que, para poder tener los datos que quiere el usuario, se necesita de una estructura para poder realizar las operaciones necesarias.
+    Si, la [[HU0](https://github.com/MauronMP/PMP_IV/issues/7)], ya que, para poder trabajar con los datos se necesita primero de una estructura.
     
 - ¿El milestone 0 corresponde con lo mencionado varias veces en clase, y en concreto con lo que se solicita en el objetivo siguiente?
     
@@ -30,7 +30,7 @@
     
 - ¿Los milestones iniciales son internos, y hay a continuación milestones o productos externos?
     
-     El [[M0](https://github.com/MauronMP/PMP_IV/milestone/2)], [[M1](https://github.com/MauronMP/PMP_IV/milestone/4)], [[M2](https://github.com/MauronMP/PMP_IV/milestone/5)] son internos, el [[M3](https://github.com/MauronMP/PMP_IV/milestone/6)] sería el externo
+     El [[M0](https://github.com/MauronMP/PMP_IV/milestone/2)], [[M1](https://github.com/MauronMP/PMP_IV/milestone/7)],son internos y el [[M2](https://github.com/MauronMP/PMP_IV/milestone/8)] sería el externo
     
 - ¿Los milestones son mínimos, es decir, incluyen un producto mínimamente viable para poder avanzar?
     

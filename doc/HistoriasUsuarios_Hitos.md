@@ -8,8 +8,6 @@ ___
 **- Milestone:**
 ___
 
-   - [[M0] Estructura de datos para poder manejar los distintos parámetros posibles a la hora de hacer un estudio de los incendios.](https://github.com/MauronMP/PMP_IV/milestone/2).
-   - [[M1] Recoger datos.](https://github.com/MauronMP/PMP_IV/milestone/4).
-   - [[M2] Entrenar una IA.](https://github.com/MauronMP/PMP_IV/milestone/5).
-   - [[M3] Dar resultados.](https://github.com/MauronMP/PMP_IV/milestone/6).
-
+   - [[M0] Estructura de datos para poder manejar los distintos parámetros posibles a la hora de hacer un estudio de los incendios.](https://github.com/MauronMP/PMP_IV/milestone/2)]
+   - [[M1] Transformación de los datos por medio de algoritmos para obtener un perímetro de riesgo de incendio.](https://github.com/MauronMP/PMP_IV/milestone/7)
+   - [[M2] Obtención de un nivel de riesgo en la escala de INFOEX.](https://github.com/MauronMP/PMP_IV/milestone/8)

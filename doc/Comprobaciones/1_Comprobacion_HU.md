@@ -10,7 +10,7 @@
     
 - ¿Tienen coherencia suficiente las historias de usuario, y en caso de que no lo tengan, se ha escrito un *user journey* para aclararlo?
     
-    Tiene coherencia y además se ha redactado un user journey detallando los puntos que pide.
+    Tiene coherencia.
     
 - ¿Todas las historias de usuario representan un beneficio para el mismo y se relacionan con la lógica de negocio? Es decir, ¿los usuarios *desean* hacerlo o tú deseas que el usuario te lo pida para hacerlo?
     
