@@ -6,7 +6,7 @@
 
 1. **Empatizar**. Problema a resolver    
 
-Predecir la probabilidad de que sufran incendios las zonas forestales y residenciales con una escala de niveles del [plan INFOEX](https://www.infoex.info/planes/infoex/#:~:text=Niveles%20de%20incendios&text=Incendios%20de%20nivel%200:%20los,bienes%20de%20car%C3%A1cter%20no%20forestal.).
+Predecir la probabilidad de que sufran incendios las zonas forestales y residenciales con una escala de niveles del [plan INFOEX](https://www.infoex.info/planes/infoex/#:~:text=Niveles%20de%20incendios&text=Incendios%20de%20nivel%200:%20los,bienes%20de%20car%C3%A1cter%20no%20forestal.) obteniendo un documento en formato PDF con los datos estudiados y gráficas del riesgo.
 
 2. **Definir**. ¿Cuál es el problema exactamente?
 
@@ -19,8 +19,8 @@ Tratando los siguientes puntos:
 
 - ¿Quién usará esta aplicación?
 
-Guardas forestales u otro organismo de la autoridad que respecte a las zonas forestales. 
-Estos reciben un nivel alerta de incendio, para tomar las medidas necesarias.
+Analista de datos del gobierno, ya que con el informe que se le da, puede tomar acciones con las autoridades.
+Estos reciben un documento con el nivel alerta de incendio y los gráficos, para tomar las medidas necesarias.
 
 - ¿Sirve su despliegue en la nube?
 
