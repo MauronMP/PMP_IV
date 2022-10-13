@@ -1,11 +1,6 @@
 from dataclasses import dataclass
 from enum import Enum
 
-# month_options = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre']
-# day_options = ['L', 'M', 'X', 'J', 'V', 'S', 'D']
-# Months = Enum('Months', month_options)
-# Day = Enum('Day', day_options)
-
 class Months(Enum):
     enero = 1
     febrero = 2
