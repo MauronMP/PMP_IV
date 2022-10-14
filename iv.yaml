@@ -1,0 +1,6 @@
+lenguaje: python
+entidad:
+  - models/coordenada.py
+  - models/estado.py
+  - models/fecha.py
+  - models/fwi.py
