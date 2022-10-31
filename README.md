@@ -47,10 +47,12 @@ Tanto la recopilación de datos, como transformación e IA se especifican en los
     
 # :heavy_check_mark: Instalación y comprobación.
 - ## Install.
-```
-invoke install
-```
+    ```
+    invoke install
+    ```
 - ## Check.
-```
-invoke check
-```
+    ```
+    invoke check
+    ```
+- ## Demostración.
+    ![Comprobación](img/Invoke_install_check.png)
