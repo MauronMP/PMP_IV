@@ -34,9 +34,14 @@ Un software capaz de predecir, el nivel de riesgo que puede haber en las zonas e
 Para ello se usarán datos de un csv (estos datos son validos), se transforman para posteriormente con una IA estimar la probabilidad de incendio que puede tener en esa zona y determinar las zonas que pueden tener vecinos con riesgo de incendio, una vez se ha estimado los vecinos, se decide el nivel de incendio.
 Tanto la recopilación de datos, como transformación e IA se especifican en los milestones.
 
-___
  
- # Milestones e HU.
+<br/>
+
+# :rock: Milestones e HU.
     
 - [Historias e hitos](https://github.com/MauronMP/PMP_IV/blob/Objetivo-1/doc/HistoriasUsuarios_Hitos.md)
+
+# :bookmark_tabs: Gestor de dependencias y tareas.
+- [Gestor de tareas](https://github.com/MauronMP/PMP_IV/blob/Objetivo-3/docs/Gestor_Tareas.md)
+- [Gestor de dependencias](https://github.com/MauronMP/PMP_IV/blob/Objetivo-3/docs/Gestor_Dependencias.md)
     
