@@ -1,4 +1,4 @@
-# Eleción del gestor de dependencias.
+# Elección del gestor de dependencias.
 
 Teniendo en cuenta [el issue](https://github.com/MauronMP/PMP_IV/issues/17) y la [HU0](https://github.com/MauronMP/PMP_IV/issues/7) #7, se quiere elegir un gestor de dependencias como parte del objetivo 3.
 
@@ -12,5 +12,5 @@ Se ha optado por poetry por:
  - Mejor visión de las dependencias al usar un fichero(pyproject.toml).
  - Tiene un entorno virtual integrado.
  - Construcción sencilla.
- - Permite cambiar facilmente entre versiones.
+ - Permite cambiar fácilmente entre versiones.
  - Rendimiento.
