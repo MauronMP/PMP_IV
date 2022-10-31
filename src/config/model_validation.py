@@ -1,8 +1,8 @@
 from dataclasses import dataclass
-from pmp_iv.enums.day import Day
-from pmp_iv.enums.month import Month
+from src.enums.day import Day
+from src.enums.month import Month
 
-from pmp_iv.utils.validation import Validation
+from src.utils.validation import Validation
 
 @dataclass
 class ModelValidation:
