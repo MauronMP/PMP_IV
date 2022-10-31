@@ -1,7 +1,7 @@
 from dataclasses import dataclass
-from pmp_iv.config.model_validation import ModelValidation
+from src.config.model_validation import ModelValidation
 
-from pmp_iv.utils.validation import Validation
+from src.utils.validation import Validation
 
 '''Propiedades últiles para poder realizar el cálculo de los elementos de la clase fwi'''
 @dataclass

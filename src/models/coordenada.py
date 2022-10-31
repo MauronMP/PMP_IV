@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from pmp_iv.config.model_validation import ModelValidation
-from pmp_iv.utils.validation import Validation
+from src.config.model_validation import ModelValidation
+from src.utils.validation import Validation
 
 '''Establece en un perímetro una zona delimitada una área'''
 @dataclass
