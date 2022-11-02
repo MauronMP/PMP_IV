@@ -6,6 +6,6 @@ entidad:
   - models/fwi.py
 
 automatizar:
-  fichero: task.py
+  fichero: tasks.py
   orden: invoke
   
