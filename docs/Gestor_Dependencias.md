@@ -1,5 +1,3 @@
-# Elección del gestor de dependencias.
-
 
 
 ## Para qué se necesita un gestor de dependencias.
@@ -7,7 +5,7 @@
 Como bien se menciona [aquí](https://ibm.github.io/data-science-best-practices/dependency_management.html)
 > Dependency management is like your city’s sewage system. When it’s working well, it’s easy to forget that it even exists. The only time you’ll remember it is when you experience the agony induced by its failure.
 
-Teniendo en cuenta el [standard de la estructura de los proyectos en Python](https://docs.python-guide.org/writing/structure/) y [este ejemplo de estructura de proyectos](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
+Teniendo en cuenta el [estándar de la estructura de los proyectos en Python](https://docs.python-guide.org/writing/structure/) y [este ejemplo de estructura de proyectos](https://packaging.python.org/en/latest/tutorials/packaging-projects/).
 
 La estructura que buscamos tener sería:
 
@@ -32,7 +30,7 @@ La estructura que buscamos tener sería:
 
 ## Gestores de dependencias.
 
-- **pip** Herramienta estándar para instalar paquetes de Python y administrar dependencias. Cuando se usa pip para instalar paquetes, recupera automáticamente el paquete y todas sus dependencias del Índice de paquetes de Python (PyPI) y los instala localmente en el sistema. Tiene la desventaja de que no resuelve los conflictos por dependencias. Usa un fichero.txt, en este caso requeriments.txt. Esto hace que todos los paquetes se guarden con versiones exactas, las actualizaciones tendrían que realizarse manualmente. A medida que avanza un proyecto es más lioso y se necesita de tiempo para mantener al día con los paquetes. En el caso de pip se usa un pipfile.lock pero se usa con pipenv, que en este caso, no nos interesa. De igual modo, con pip se tiene que crear manualmente la estructura mencionada anteriormente como se puede ver [aquí](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+- **pip** Herramienta estándar para instalar paquetes de Python y administrar dependencias. Cuando se usa pip para instalar paquetes, recupera automáticamente el paquete y todas sus dependencias del Índice de paquetes de Python (PyPI) y los instala localmente en el sistema. Tiene la desventaja de que no resuelve los conflictos por dependencias. Usa un fichero.txt, en este caso requeriments.txt. Esto hace que todos los paquetes se guarden con versiones exactas, las actualizaciones tendrían que realizarse manualmente. A medida que avanza un proyecto es más lioso y se necesita de tiempo para mantener al día con los paquetes. En el caso de pip se usa un pipfile.lock, pero se usa con pipenv, que en este caso, no nos interesa. De igual modo, con pip se tiene que crear manualmente la estructura mencionada anteriormente como se puede ver [aquí](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 
 - **Conda** 
 Es un paquete, dependencia y herramienta de gestión del entorno para Anaconda Python. Algunas de sus características básicas son similares a Pip, Virtualenv y Venv. Sin embargo, es una herramienta separada y mejorada diseñada para funcionar solo en entornos Conda.
@@ -40,11 +38,11 @@ Conda no solo proporciona entornos virtuales que aíslan o encajan cada proyecto
 
 
 - **poetry** Es una herramienta de dependencia y gestión de python, usa sistema de archivos de bloqueo para compiladores. Garantiza que se esté usando un entorno virtual, por lo que evita errores de instalaciones globales. Puede declarar sus dependencias por medio de la shell o en el fichero pyproject.toml
-Las dependencias del proyecto se gestionan en el pyproject.toml, que se actualiza automáticamente cada vez que se ejecuta el comando de instalación de poetry. Genera del mismo modo un fichero lock. Tiende a ser más rápido. Sigue el estandar de la estructuras de los projectos de python como se puede ver [en este ejemplo a la hora de crear un proyecto con poetry](https://python-poetry.org/docs/basic-usage/), ya que genera un fichero .toml, Readme.md, directorio para los .py y otro para los test.
+Las dependencias del proyecto se gestionan en el pyproject.toml, que se actualiza automáticamente cada vez que se ejecuta el comando de instalación de poetry. Genera del mismo modo un fichero lock. Tiende a ser más rápido. Sigue el estandar de la estructura de los projectos de python como se puede ver [en este ejemplo a la hora de crear un proyecto con poetry](https://python-poetry.org/docs/basic-usage/), ya que genera un fichero .toml, Readme.md, directorio para los .py y otro para los test.
 
 Se ha optado por poetry por:
 
- - Seguir el estándar de la estructuras de los proyectos en Python.
+ - Seguir el estándar de la estructura de los proyectos en Python.
  - Documentación oficial muy sencilla.
  - Mejor visión de las dependencias al usar un fichero(pyproject.toml).
  - Tiene un entorno virtual integrado.
