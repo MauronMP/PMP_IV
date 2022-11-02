@@ -6,8 +6,10 @@ def install(c):
 
 @task
 def test(c):
-    run("poetry run test")
+    run("poetry run pytest")
 
 @task
 def check(c):
     run("poetry check")
+
+    

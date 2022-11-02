@@ -8,8 +8,8 @@ repository = "https://github.com/MauronMP/PMP_IV/"
 documentation = "https://github.com/MauronMP/PMP_IV/tree/Objetivo-3/docs" #Temporal, después será la rama main
 
 packages = [
-    { include = "src/**/*.py" },
-    { include = "src/*.py" },
+    { include = "pmp_iv/**/*.py" },
+    { include = "pmp_iv/*.py" },
 ]
 
 

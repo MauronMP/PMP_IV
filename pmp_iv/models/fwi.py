@@ -1,7 +1,7 @@
 from dataclasses import dataclass
-from src.config.model_validation import ModelValidation
+from pmp_iv.config.model_validation import ModelValidation
 
-from src.utils.validation import Validation
+from pmp_iv.utils.validation import Validation
 
 '''Fire weather index'''
 @dataclass
