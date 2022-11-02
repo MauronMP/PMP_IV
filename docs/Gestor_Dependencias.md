@@ -1,15 +1,31 @@
 # Elección del gestor de dependencias.
 
-Teniendo en cuenta [el issue](https://github.com/MauronMP/PMP_IV/issues/17) y la [HU0](https://github.com/MauronMP/PMP_IV/issues/7) #7, se quiere elegir un gestor de dependencias como parte del objetivo 3.
+## Para qué se necesita un gestor de dependencias.
 
-Hay distintas opciones para el gestor de dependencias:
+Como bien se menciona [aquí](https://ibm.github.io/data-science-best-practices/dependency_management.html)
+> Dependency management is like your city’s sewage system. When it’s working well, it’s easy to forget that it even exists. The only time you’ll remember it is when you experience the agony induced by its failure.
+
+## Mejores prácticas para la gestión de dependencias de python.
+- Debe de ser estable en todos los entornos en los que se trabaje. 
+- Debe de ser fácil de instalar, compilar y ejecutar.
+- Evitar el 'Dependency Hell', este concepto se asocia cuando se intenta resolver conflictos por dependencias. Esto ocurre cuando diferentes paquetes de Python tienen la misma dependencia, pero dependiendo de versiones distintas e incompatibles de un paquete compartido.
+- Creación de un fichero lock, para asegurar que las dependencias sigan fijadas a las versiones exactas en uso.
+- Tener todas las dependencias en un único fichero en lugar de tenerlo individualmente.
+
+## Gestores de dependencias.
+
+- **pip** Herramienta estándar para instalar paquetes de Python y administrar dependencias. Cuando se usa pip para instalar paquetes, recupera automáticamente el paquete y todas sus dependencias del Índice de paquetes de Python (PyPI) y los instala localmente en el sistema. Tiene la desventaja de que no resuelve los conflictos por dependencias. Usa un fichero.txt, en este caso requeriments.txt. Esto hace que todos los paquetes se guarden con versiones exactas, las actualizaciones tendrían que realizarse manualmente. A medida que avanza un proyecto es más lioso y se necesita de tiempo para mantener al día con los paquetes.
+
+- **Conda** 
+Es un paquete, dependencia y herramienta de gestión del entorno para Anaconda Python. Algunas de sus características básicas son similares a Pip, Virtualenv y Venv. Sin embargo, es una herramienta separada y mejorada diseñada para funcionar solo en entornos Conda.
+Conda no solo proporciona entornos virtuales que aíslan o encajan cada proyecto para evitar conflictos de dependencia entre ellos; analiza cada paquete en busca de dependencias compatibles y posibles conflictos durante la instalación. Si hay un conflicto, Conda informa o indica que la instalación no se puede completar.
 
 
 - **poetry** Es una herramienta de dependencia y gestión de python, usa sistema de archivos de bloqueo para compiladores. Garantiza que se esté usando un entorno virtual, por lo que evita errores de instalaciones globales. Puede declarar sus dependencias por medio de la shell o en el fichero pyproject.toml
-- **pip-tools** Usado para el manejo de dependencias, basado en dos comandos, 'pip-compile' y 'pip-sync', uno crea un fichero de requerimientos y otro instala las cosas del primero. Pero se usa el fichero requeriments.txt lo cúal hace que todos los paquetes se guarden con versiones exactas, las actualizaciones tendrían que realizarse manualmente. A medida que avanza un proyecto es más lioso y se necesita de tiempo para mantener al día con los paquetes.
-- **pipenv** Usando para el manejo de versiones de python. Su últilma actualización es de finales de 2018. Al igual que el anterior, se usa un "requeriments.txt" y genera los problemas del anterior.
+Las dependencias del proyecto se gestionan en el pyproject.toml, que se actualiza automáticamente cada vez que se ejecuta el comando de instalación de poetry. Genera del mismo modo un fichero lock. Tiende a ser más rápido.
 
 Se ha optado por poetry por:
+ - Documentación oficial muy sencilla.
  - Mejor visión de las dependencias al usar un fichero(pyproject.toml).
  - Tiene un entorno virtual integrado.
  - Construcción sencilla.
