@@ -28,7 +28,10 @@ La estructura que buscamos tener sería:
 
 ## Gestores de dependencias.
 
-- **pipenv** Las dependencias una vez se instalan se guardan en la configuración Pipfile que guarda todas las dependencias de paquestes del proyecto. Cuando una versión de un paquete se modifica, todas las versiones de las dependencias se recalculan. Tiene un fichero Pipefile.lock que se crea con el hash exacto del paquete que agrega. Es una mejora al uso del fichero "requirements.txt". Tiene como desventaja que está estancado desde finales de 2020, de igual modo, con el estándar de python de usar ficheros pyproject.toml pipenv no cumple con esto de manera nativa, es necesario tener dos ficheros Pipfile y hace que tenga que mantener dos ficheros de configuración.
+- **PDM** Instala y gestiona paquetes de manera similar a npm que no necesita crear un virtualenv. Soporta el PEP 582, sigue los estándares de python. Sistema flexible y potente. Cache de instalación centralizado como pnpm. De igual modo, a la hora crear un proyecto sigue el estándar y genera una [estructura útil](https://pdm.fming.dev/latest/usage/project/)
+
+
+- **hatch** Es una herramienta útil para el aislamiento del entorno y destinado a administrar dependencias. Tiene un sistema de complementos que hace fácil su funcionalidad. Sistema de compilación estandarizado con compliaciones de manera predeterminada. [Sigue el estándar de la estructura de proyectos](https://hatch.pypa.io/latest/intro/).
 
 
 - **poetry** Es una herramienta de dependencia y gestión de python, usa sistema de archivos de bloqueo para compiladores. Garantiza que se esté usando un entorno virtual, por lo que evita errores de instalaciones globales. Puede declarar sus dependencias por medio de la shell o en el fichero pyproject.toml
