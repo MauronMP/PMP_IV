@@ -8,8 +8,3 @@ def install(c):
 def test(c):
     run("poetry run pytest")
 
-@task
-def check(c):
-    run("poetry check")
-
-    
