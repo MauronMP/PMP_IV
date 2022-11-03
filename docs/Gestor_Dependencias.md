@@ -12,11 +12,10 @@ La estructura que buscamos tener sería:
 - proyecto
     - pyproject.toml
     - README.md
-    - src/
-        - paquete_1
-            - __init__.py
-            - ejemplo.py
+    - proyecto/
+        - __init__.py
     - tests/
+        - __init__.py
 
 ## Mejores prácticas para la gestión de dependencias de python.
 - Debe de ser estable en todos los entornos en los que se trabaje. 
