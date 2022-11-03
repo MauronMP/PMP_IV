@@ -17,6 +17,8 @@ La estructura que buscamos tener sería:
     - tests/
         - __init__.py
 
+> Por favor no copiéis ni esto ni la lista de gestores que se han puesto aquí. Buscad los vuestros propios, porque se trata de que tratéis de encontrar la solución a los problemas que se plantean en vuestro proyecto.
+
 ## Mejores prácticas para la gestión de dependencias de python.
 - Debe de ser estable en todos los entornos en los que se trabaje. 
 - Debe de ser fácil de instalar, compilar y ejecutar.
