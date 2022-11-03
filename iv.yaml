@@ -4,3 +4,8 @@ entidad:
   - models/estado.py
   - models/fecha.py
   - models/fwi.py
+
+automatizar:
+  fichero: tasks.py
+  orden: invoke
+  

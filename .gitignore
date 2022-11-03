@@ -1,2 +1,4 @@
 __pycache__
 testmain_*
+*.pyc 
+*.pytest_cache 
