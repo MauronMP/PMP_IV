@@ -14,8 +14,10 @@ packages = [
 
 
 [tool.poetry.dependencies]
-python = ">=3.6" 
+python = ">=3.8" 
 pytest-tap = "^3.3"
+pyhamcrest = "^2.0.4"
+pandas = "^1.5.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.1.2"
