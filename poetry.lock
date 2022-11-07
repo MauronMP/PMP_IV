@@ -2,7 +2,7 @@
 name = "atomicwrites"
 version = "1.4.1"
 description = "Atomic file writes."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -10,7 +10,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 name = "attrs"
 version = "22.1.0"
 description = "Classes Without Boilerplate"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.5"
 
@@ -24,7 +24,7 @@ tests-no-zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy 
 name = "colorama"
 version = "0.4.5"
 description = "Cross-platform colored terminal text."
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -32,7 +32,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "importlib-metadata"
 version = "4.8.3"
 description = "Read metadata from Python packages"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -49,7 +49,7 @@ testing = ["flufl.flake8", "importlib-resources (>=1.3)", "packaging", "pep517",
 name = "iniconfig"
 version = "1.1.1"
 description = "iniconfig: brain-dead simple config-ini parsing"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 
@@ -57,7 +57,7 @@ python-versions = "*"
 name = "packaging"
 version = "21.3"
 description = "Core utilities for Python packages"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -68,7 +68,7 @@ pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
 name = "pluggy"
 version = "1.0.0"
 description = "plugin and hook calling mechanisms for python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -83,7 +83,7 @@ testing = ["pytest", "pytest-benchmark"]
 name = "py"
 version = "1.11.0"
 description = "library with cross-python path, ini-parsing, io, code, log facilities"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -91,7 +91,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "pyparsing"
 version = "3.0.7"
 description = "Python parsing module"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -102,7 +102,7 @@ diagrams = ["jinja2", "railroad-diagrams"]
 name = "pytest"
 version = "6.2.5"
 description = "pytest: simple powerful testing with Python"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -121,10 +121,33 @@ toml = "*"
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
 
 [[package]]
+name = "pytest-tap"
+version = "3.3"
+description = "Test Anything Protocol (TAP) reporting plugin for pytest"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pytest = ">=3.0"
+"tap.py" = ">=3.0,<4.0"
+
+[[package]]
+name = "tap-py"
+version = "3.1"
+description = "Test Anything Protocol (TAP) tools"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+yaml = ["PyYAML (>=5.1)", "more-itertools"]
+
+[[package]]
 name = "toml"
 version = "0.10.2"
 description = "Python Library for Tom's Obvious, Minimal Language"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -132,7 +155,7 @@ python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
 name = "typing-extensions"
 version = "4.1.1"
 description = "Backported and Experimental Type Hints for Python 3.6+"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -140,7 +163,7 @@ python-versions = ">=3.6"
 name = "zipp"
 version = "3.6.0"
 description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -151,7 +174,7 @@ testing = ["func-timeout", "jaraco.itertools", "pytest (>=4.6)", "pytest-black (
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.6" 
-content-hash = "aacbfa99a2d2847565123f7e650faefe889a7ba7728e4f325ae9380727b98138"
+content-hash = "35b7ff9510121171c98f1bee8b517bae454d50e7a0692d19f06290fda2c05f2c"
 
 [metadata.files]
 atomicwrites = [
@@ -192,6 +215,14 @@ pyparsing = [
 pytest = [
     {file = "pytest-6.2.5-py3-none-any.whl", hash = "sha256:7310f8d27bc79ced999e760ca304d69f6ba6c6649c0b60fb0e04a4a77cacc134"},
     {file = "pytest-6.2.5.tar.gz", hash = "sha256:131b36680866a76e6781d13f101efb86cf674ebb9762eb70d3082b6f29889e89"},
+]
+pytest-tap = [
+    {file = "pytest-tap-3.3.tar.gz", hash = "sha256:5f0919a147cf0396b2f10d64d365a0bf8062e06543e93c675c9d37f5605e983c"},
+    {file = "pytest_tap-3.3-py3-none-any.whl", hash = "sha256:4fbbc0e090c2e94f6199bee4e4f68ab3c5e176b37a72a589ad84e0f72a2fce55"},
+]
+tap-py = [
+    {file = "tap.py-3.1-py3-none-any.whl", hash = "sha256:928c852f3361707b796c93730cc5402c6378660b161114461066acf53d65bf5d"},
+    {file = "tap.py-3.1.tar.gz", hash = "sha256:3c0cd45212ad5a25b35445964e2517efa000a118a1bfc3437dae828892eaf1e1"},
 ]
 toml = [
     {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
