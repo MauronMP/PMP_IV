@@ -6,7 +6,7 @@ def install(c):
 
 @task
 def test(c):
-    run("poetry run pytest")
+    run("poetry run pytest --tap-stream")
 
 @task
 def jupyter(c):
