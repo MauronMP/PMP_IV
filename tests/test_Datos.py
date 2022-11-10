@@ -1,12 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
-import os
 from hamcrest import *
-from DatosJupyter.Datos import *
-from DatosJupyter.Tests import *
+from pmp_iv.segmentacionCSV.Datos import *
+from pmp_iv.segmentacionCSV.Tests import *
 
 def test_tamanio_CSV():
     assert_that(len(leeCSV()), equal_to(517))

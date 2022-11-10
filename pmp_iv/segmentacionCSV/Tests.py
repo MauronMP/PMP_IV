@@ -1,7 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
+from pmp_iv.segmentacionCSV.Datos import Datos
 
-from DatosJupyter.Datos import Datos
 def leeCSV():
     datos = Datos()
     return datos.getDF()
@@ -23,10 +21,3 @@ def filtrado_Viento():
 def comprobar_Imagen():
     datos = Datos()
     return datos.diagramaDispersion()
-
-
-# In[ ]:
-
-
-
-

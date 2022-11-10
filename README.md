@@ -60,4 +60,4 @@ Tanto la recopilación de datos, como transformación e IA se especifican en los
     invoke check
     ```
 - ## Demostración.
-    ![Comprobación](img/Invoke_test.png)
+    ![Comprobación](docs/img/Invoke_test.png)

@@ -1,18 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Obtención de los datos.
-
-# In[3]:
-
-
 import pandas as pd
 import numpy as np
 
 class Datos():
     
     def __init__(self):
-        self.df = pd.read_csv('/home/mauron/Dropbox/UGR/IV/data/incendiosForestales.csv')
+        self.df = pd.read_csv('data/incendiosForestales.csv')
         
     def getDF(self):
         return self.df
@@ -40,8 +32,8 @@ class Datos():
     def diagramaDispersion(self):
         df = self.df
         df['Log-area']=np.log10(df['area']+1)
-        for i in df[['FFMC', 'DMC', 'DC']].describe():
+        for i in df[['FFMC', 'DMC', 'DC','ISI']].describe():
             muestra = df.plot.scatter(i,'Log-area',grid=True)
-            muestra.figure.savefig('/home/mauron/Dropbox/UGR/IV/output/diagramaDispersion/'+i+'.png',dpi=200)
+            muestra.figure.savefig('output/diagramaDispersion/'+i+'.png',dpi=200)
         return len(df[['FFMC', 'DMC', 'DC','ISI']].columns)
 
