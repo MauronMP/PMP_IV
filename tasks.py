@@ -11,3 +11,7 @@ def test(c):
 @task
 def jupyter(c):
     run("poetry run jupyter notebook")
+
+@task
+def check(c):
+    run("poetry check")
