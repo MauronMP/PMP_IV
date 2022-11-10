@@ -45,7 +45,7 @@ Tanto la recopilación de datos, como transformación e IA se especifican en los
 - [Gestor de tareas](https://github.com/MauronMP/PMP_IV/blob/Objetivo-3/docs/Gestor_Tareas.md)
 - [Gestor de dependencias](https://github.com/MauronMP/PMP_IV/blob/Objetivo-3/docs/Gestor_Dependencias.md)
     
-# :heavy_check_mark: Instalación y testeo.
+# :heavy_check_mark: Instalación, check testeo.
 - ## Install.
     ```
     invoke install
@@ -54,5 +54,10 @@ Tanto la recopilación de datos, como transformación e IA se especifican en los
     ```
     invoke test
     ```
+
+- ## Check.
+    ```
+    invoke check
+    ```
 - ## Demostración.
-    ![Comprobación](img/Invoke_install_test.png)
+    ![Comprobación](img/Invoke_test.png)
