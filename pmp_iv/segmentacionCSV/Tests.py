@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-from DatosJupyter.Datos import Datos
+from pmp_iv.segmentacionCSV.Datos import Datos
 def leeCSV():
     datos = Datos()
     return datos.getDF()
