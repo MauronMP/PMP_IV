@@ -3,3 +3,4 @@ testmain_*
 *.pyc 
 *.pytest_cache 
 .ipynb_checkpoints
+notebooks/
