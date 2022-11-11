@@ -15,7 +15,6 @@ packages = [
 
 [tool.poetry.dependencies]
 python = ">=3.8" 
-pytest-tap = "^3.3"
 pyhamcrest = "^2.0.4"
 pandas = "^1.5.1"
 matplotlib = "^3.6.2"
@@ -23,13 +22,10 @@ numpy = "^1.23.4"
 jupyter-client = "^7.4.4"
 pytest = "^7.2.0"
 ipykernel = "^6.17.0"
-testbook = "^0.4.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.2.0"
 
-[tool.poetry.scripts]
-test = "pruebas:testeo"
 
 [tool.poetry.group.dev.dependencies]
 jupyter = "^1.0.0"
