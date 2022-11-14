@@ -1,39 +1,37 @@
-import pandas as pd
-import numpy as np
-
+import csv
+import math
+import matplotlib.pyplot as plt
 class Datos():
     
-    def __init__(self):
-        self.df = pd.read_csv('data/incendiosForestales.csv')
-        
-    def getDF(self):
-        return self.df
-    
-    def filtrar_mes_dia(self,args_list):
-        df = self.df
-        constraints = []
-        for a in args_list:
-            col = a[0]
-            symbol = a[1]
-            value = a[2]
-            constraint = "(df.{}{}{})".format(col, symbol, value)
-            constraints.append(constraint)
-            
-        filter_str = "&".join(constraints)
+    def size_of_CSV(self):
+        with open('data/incendiosForestales.csv', 'r', newline='') as file:
+            content = file.readlines()
+        rows = content[1:]
+        return len(rows)
 
-        return df[eval(filter_str)]
+    def by_date_property(self, mes, dia, propiedad=None):
+        mes_dia = []
+        with open('data/incendiosForestales.csv', 'r', newline='') as csvfile:
+            data = csv.DictReader(csvfile)
+            for row in data:
+                if(row['month'] == mes and row['day'] == dia and propiedad is not None):
+                    mes_dia.append( [row['X'], row['Y'],row['month'], row['day'],row[propiedad]])
+                elif(propiedad is None and row['month'] == mes and row['day'] == dia):
+                    mes_dia.append( [row['X'], row['Y'],row['month'], row['day']])
+        return mes_dia
     
-    def filtrarViento(self,args_list):
-        df = self.filtrar_mes_dia(args_list)
-        df = df[['X','Y','month','day','wind']]
-        filtrado = df.sort_values('wind', ascending=False).drop_duplicates(['X', 'Y']).sort_index()
-        return filtrado
+    def only_one_column(self, data, column):
+        filter_column = []
+        for i in range(len(data)):
+            filter_column.append(data[i][column])
+        return filter_column
     
-    def diagramaDispersion(self):
-        df = self.df
-        df['Log-area']=np.log10(df['area']+1)
-        for i in df[['FFMC', 'DMC', 'DC','ISI']].describe():
-            muestra = df.plot.scatter(i,'Log-area',grid=True)
-            muestra.figure.savefig('output/diagramaDispersion/'+i+'.png',dpi=200)
-        return len(df[['FFMC', 'DMC', 'DC','ISI']].columns)
-
+    def diagramaDispersion(self,data,area,image_name):
+        area_filter = self.only_one_column(area,4)
+        for i in range(len(area_filter)):
+            area_filter[i] = (math.log10(((float(area[i][4]))+1)))
+        plt.xlabel("Area")
+        plt.scatter(self.only_one_column(data,4),area_filter)
+        plt.title("Diagrama dispersión")
+        plt.savefig('output/diagramaDispersion/'+image_name+'.png',dpi=200)
+        return image_name+'.png'
