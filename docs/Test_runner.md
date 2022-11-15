@@ -1,10 +1,6 @@
 # Elección de un test runner.
 
-Vamos a partir de las valoraciones de [esta página](https://snyk.io/advisor/python). Que hace una comparativa de cada librería para un proyecto para distintos lenguajes, en este caso python. La manera de evaluar cómo de bueno es un paquete es por:
-- Popularidad.
-- Mantenimiento.
-- Seguridad.
-- Comunidad.
+Vamos a partir de las valoraciones de [esta página](https://snyk.io/advisor/python). Que hace una comparativa de cada librería para un proyecto para distintos lenguajes, en este caso python.
 
 ## **Opciones**.
 
