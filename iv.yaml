@@ -10,5 +10,4 @@ automatizar:
   orden: invoke
   
 test: 
-  - tests/test_Jupyter.py
   - tests/test_pmp_iv.py
