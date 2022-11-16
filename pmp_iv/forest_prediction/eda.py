@@ -23,9 +23,9 @@ class EDA():
         return list_property
     
     def weather(self):
-        all_propierties = []
+        all_properties = []
         for row in self.weather_data:
-            all_propierties.append([row['FFMC'], row['DMC'], row['DC'], row['ISI'],
+            all_properties.append([row['FFMC'], row['DMC'], row['DC'], row['ISI'],
                                     row['temp'], row['RH'],row['wind'], row['area']])
-        all_propierties = [list(map(float, sublist)) for sublist in all_propierties]
-        return all_propierties
+        all_properties = [list(map(float, sublist)) for sublist in all_properties]
+        return all_properties
