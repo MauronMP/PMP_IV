@@ -9,9 +9,5 @@ def test(c):
     run("poetry run pytest -v")
 
 @task
-def jupyter(c):
-    run("poetry run jupyter notebook")
-
-@task
 def check(c):
     run("poetry check")
