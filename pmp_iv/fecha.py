@@ -1,9 +1,9 @@
 from dataclasses import dataclass
 from enum import Enum
-from pmp_iv.config.model_validation import ModelValidation
-from pmp_iv.enums.day import Day
-from pmp_iv.enums.month import Month
-from pmp_iv.utils.validation import Validation
+from pmp_iv.model_validation import ModelValidation
+from pmp_iv.day import Day
+from pmp_iv.month import Month
+from pmp_iv.validation import Validation
 
 '''Utilizado para segmentar la información'''
 @dataclass

@@ -1,4 +1,5 @@
 from invoke import task, run
+import os
 
 @task
 def install(c):
@@ -6,5 +7,10 @@ def install(c):
 
 @task
 def test(c):
-    run("poetry run pytest")
+    run("poetry run pytest -v")
 
+@task
+def check(c):
+    cmd = "python3 -m compileall pmp_iv"
+    result = run(cmd, hide=True, warn=True)
+    print(result.ok)
