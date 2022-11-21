@@ -1,7 +1,7 @@
 import os
 import pytest
-from pmp_iv.models.eda import *
-from pmp_iv.models.correlacion_area import *
+from pmp_iv.eda import *
+from pmp_iv.correlacion_area import *
 from hamcrest import *
 
 
@@ -25,9 +25,6 @@ def get_correlacion(get_eda):
     correlacion = correlacion_area(get_eda.area, get_eda.by_property(PROPIEDAD_VIENTO))
     return correlacion
 
-def test_syntaxis():
-    os.system("python3 -m compileall pmp_iv")
-
 def test_wind_filter(get_eda):
     #Act
     filtrado_viendo = get_eda.by_date_property(MES_AGOSTO,DIA_LUNES,PROPIEDAD_VIENTO)
@@ -38,7 +35,7 @@ def test_wind_filter(get_eda):
 
 def test_correlacion(get_correlacion):
     #Act
-    calc_correlacion = get_correlacion.calculo_coeficiente()
+    calc_correlacion = get_correlacion.coeficiente
 
     #Assert
     assert_that(calc_correlacion, less_than_or_equal_to(MAX_CORRELACION))
