@@ -1,5 +1,4 @@
 from invoke import task, run
-import os
 
 @task
 def install(c):

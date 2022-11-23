@@ -1,4 +1,3 @@
-import os
 import pytest
 from pmp_iv.eda import *
 from pmp_iv.correlacion_area import *
