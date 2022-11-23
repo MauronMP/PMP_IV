@@ -20,4 +20,4 @@ Partimos de dos caminos:
     - Ubuntu. Imagen muy pesada en comparación con las anteriores y tiene muchos paquetes instalados que no son necesarios para este proyecto.
     - Debian. Más liviana que la anterior, pero para usar Debian es más conveniente usar una versión de las oficiales de python que usan Debian de manera más liviana, como el caso de la versión bullseye.
 
-Finalmente, se ha elegido la oficial de docker, en este caso la [3.8-slim-buster](https://github.com/docker-library/python/blob/d24131ca9b820cd7a83ec7920b49bd0463d4db92/3.8/slim-buster/Dockerfile)
+Finalmente, se ha elegido la oficial de docker, en este caso la **3.9-slim** ya que genera problemas con invoke, ya que tanto invoke como nose2, opciones barajadas como tasks runners trabajan hasta las versiones 3.9 de python, pero las versiones de docker de python a partir de las 3.10 en adelante genera problemas por depenencias que los test runners no disponen. 
