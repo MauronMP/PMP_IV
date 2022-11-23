@@ -20,4 +20,3 @@ RUN poetry install
 ENTRYPOINT [ "inv", "test" ]
 
 
-
