@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster
+FROM python:3.9-slim
 
 RUN mkdir -p /app/test
 
@@ -10,7 +10,7 @@ RUN export PYTHONDONTWRITEBYTECODE=1
 
 WORKDIR /app/test/
 RUN chown -R 1001:1001 /app/
-COPY pyproject.toml .
+COPY pyproject.toml poetry.lock ./
 
 RUN pip install invoke
 RUN pip install poetry
