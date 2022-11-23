@@ -55,6 +55,18 @@ Tanto la recopilación de datos, como transformación e IA se especifican en los
     -[Imagen](https://github.com/MauronMP/PMP_IV/blob/Objetivo-5/docs/Docker_image.md)
     
 # :heavy_check_mark: Instalación, check testeo.
+- ## Install.
+    ```
+    invoke install
+    ```
+- ## Test.
+    ```
+    invoke test
+- ## Check.
+    ```
+    invoke check
+- ## Demostración.
+
    ![Comprobación](docs/img/invoke_check_test.png)
 
 # :whale2: Docker.
