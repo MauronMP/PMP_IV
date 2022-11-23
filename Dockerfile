@@ -18,5 +18,3 @@ RUN pip install poetry
 RUN poetry install
 
 ENTRYPOINT [ "inv", "test" ]
-
-
