@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.9-slim
 
 RUN mkdir -p /app/test
 
@@ -12,8 +12,7 @@ WORKDIR /app/test/
 RUN chown -R 1001:1001 /app/
 COPY pyproject.toml poetry.lock ./
 
-RUN pip install invoke
-RUN pip install poetry
+RUN pip install invoke poetry
 
 RUN poetry install
 
