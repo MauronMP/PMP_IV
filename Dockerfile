@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM bitnami/python:3.9
 
 RUN mkdir -p /app/test
 
@@ -12,7 +12,7 @@ WORKDIR /app/test/
 RUN chown -R 1001:1001 /app/
 COPY pyproject.toml poetry.lock ./
 
-RUN pip install invoke poetry
+RUN pip install --upgrade pip invoke poetry
 
 RUN poetry install
 
