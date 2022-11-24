@@ -1,4 +1,4 @@
-FROM python:3.9-slim
+FROM python:latest
 
 RUN mkdir -p /app/test
 
