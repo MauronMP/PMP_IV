@@ -12,7 +12,7 @@ WORKDIR /app/test/
 RUN chown -R 1001:1001 /app/
 COPY pyproject.toml poetry.lock ./
 
-RUN pip install --upgrade pip invoke poetry
+RUN pip install --upgrade pip poetry
 
 RUN poetry install
 
