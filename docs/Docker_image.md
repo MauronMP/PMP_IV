@@ -19,5 +19,6 @@ Partimos de dos caminos:
 
     - Ubuntu. Imagen muy pesada en comparación con las anteriores y tiene muchos paquetes instalados que no son necesarios para este proyecto.
     - Debian. Más liviana que la anterior, pero para usar Debian es más conveniente usar una versión de las oficiales de python que usan Debian de manera más liviana, como el caso de la versión bullseye.
+    - **bitnami** Esta será la elegida. Además de que es una imagen más ligera que las demás mencionadas, buen rendimiento, muchas descargas en dockerhub, cuenta además con el 'VERIFIED PUBLISHER' de dockerhub en python. Otro motivo ajeno es diferenciarse de las oficiales de python que serán elegidas por otros compañeros...
 
-Finalmente, se ha elegido la oficial de docker, en este caso la **3.9-slim** ya que genera problemas con invoke, ya que tanto invoke como nose2, opciones barajadas como tasks runners trabajan hasta las versiones 3.9 de python, pero las versiones de docker de python a partir de las 3.10 en adelante genera problemas por depenencias que los test runners no disponen. 
+Finalmente, se ha elegido bitnami, en este caso la **3.9** ya que genera problemas con invoke, puesto que tanto invoke como nose2, opciones barajadas como tasks runners trabajan hasta las versiones 3.9 de python, pero las versiones de docker de python a partir de las 3.10 en adelante genera problemas por depenencias que los test runners no disponen. 
