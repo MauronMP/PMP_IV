@@ -8,12 +8,11 @@ ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
 RUN export PYTHONDONTWRITEBYTECODE=1
 
+RUN pip install --upgrade pip poetry
+COPY pyproject.toml poetry.lock ./
+RUN poetry install && rm ./pyproject.toml ./poetry.lock   
+
 WORKDIR /app/test/
 RUN chown -R 1001:1001 /app/
-COPY pyproject.toml poetry.lock ./
-
-RUN pip install --upgrade pip poetry
-
-RUN poetry install
 
 ENTRYPOINT [ "inv", "test" ]
