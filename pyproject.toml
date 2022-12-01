@@ -4,7 +4,7 @@ version = "0.0.5"
 description = "Gestor dependencias para objetivo 3 en adelante"
 authors = ["Pablo Morenilla <MauronMP>"]
 repository = "https://github.com/MauronMP/PMP_IV/"
-documentation = "https://github.com/MauronMP/PMP_IV/tree/Objetivo-5/docs" 
+
 
 [tool.poetry.dependencies]
 python = ">=3.8" 
