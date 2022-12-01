@@ -2,7 +2,6 @@
 
 ¿Qué se busca en una imagen?
 
-- Estabilidad.
 - Tamaño de la imagen.
 - Actualizado al día con el lenguaje, en este caso python.
 - Actualizada las dependencias.
