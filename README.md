@@ -62,9 +62,11 @@ Tanto la recopilación de datos, como transformación e IA se especifican en los
 - ## Test.
     ```
     invoke test
+    ```
 - ## Check.
     ```
     invoke check
+    ```
 - ## Demostración.
 
    ![Comprobación](docs/img/invoke_check_test.png)
