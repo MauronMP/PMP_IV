@@ -73,7 +73,7 @@ Tanto la recopilación de datos, como transformación e IA se especifican en los
 
 # :whale2: Docker.
 
-- Descargar el [repositorio](https://github.com/MauronMP/PMP_IV/tree/Objetivo-5).
+- Descargar el [repositorio](https://github.com/MauronMP/PMP_IV).
 - Ejecutar 
     ```
     docker run -u 1001 -t -v `pwd`:/app/test mauronmp/pmp_iv
