@@ -37,18 +37,22 @@ Tanto la recopilación de datos, como transformación e IA se especifican en los
  
 <br/>
 
-# :rock: Milestones e HU.
+
+# Documentos:
+- ## :rock: Milestones e HU.
     
-- [Historias e hitos](https://github.com/MauronMP/PMP_IV/blob/Objetivo-1/doc/HistoriasUsuarios_Hitos.md)
+    - [Historias e hitos](https://github.com/MauronMP/PMP_IV/blob/Objetivo-5/doc/HistoriasUsuarios_Hitos.md)
 
-# :bookmark_tabs: Gestor de dependencias y tareas.
-- [Gestor de tareas](https://github.com/MauronMP/PMP_IV/blob/Objetivo-3/docs/Gestor_Tareas.md)
-- [Gestor de dependencias](https://github.com/MauronMP/PMP_IV/blob/Objetivo-3/docs/Gestor_Dependencias.md)
+- ## :bookmark_tabs: Gestor de dependencias y tareas.
+    - [Gestor de tareas](https://github.com/MauronMP/PMP_IV/blob/Objetivo-5/docs/Gestor_Tareas.md)
+    - [Gestor de dependencias](https://github.com/MauronMP/PMP_IV/blob/Objetivo-5/docs/Gestor_Dependencias.md)
 
-# :speech_balloon: Librerías de asserción y test.
-- [Asserción](https://github.com/MauronMP/PMP_IV/blob/Objetivo-4/docs/Assertion_library.md)
-- [Test](https://github.com/MauronMP/PMP_IV/blob/Objetivo-4/docs/Test_runner.md)
+- ## :speech_balloon: Librerías de asserción y test.
+    - [Asserción](https://github.com/MauronMP/PMP_IV/blob/Objetivo-5/docs/Assertion_library.md)
+    - [Test](https://github.com/MauronMP/PMP_IV/blob/Objetivo-5/docs/Test_runner.md)
+- ## :floppy_disk: Imagen docker.
 
+    -[Imagen](https://github.com/MauronMP/PMP_IV/blob/Objetivo-5/docs/Docker_image.md)
     
 # :heavy_check_mark: Instalación, check testeo.
 - ## Install.
@@ -59,10 +63,18 @@ Tanto la recopilación de datos, como transformación e IA se especifican en los
     ```
     invoke test
     ```
-
 - ## Check.
     ```
     invoke check
     ```
 - ## Demostración.
-    ![Comprobación](docs/img/invoke_check_test.png)
+
+   ![Comprobación](docs/img/invoke_check_test.png)
+
+# :whale2: Docker.
+
+- Descargar el [repositorio](https://github.com/MauronMP/PMP_IV/tree/Objetivo-5).
+- Ejecutar 
+    ```
+    docker run -u 1001 -t -v `pwd`:/app/test mauronmp/pmp_iv
+    ```
