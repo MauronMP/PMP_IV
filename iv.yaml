@@ -11,3 +11,5 @@ automatizar:
   
 test: 
   - tests/test_pmp_iv.py
+
+CI: .circleci/config.yml
