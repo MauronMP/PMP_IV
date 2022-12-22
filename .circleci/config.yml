@@ -1,12 +1,14 @@
+
 version: 2.1
 
 orbs:
   python: circleci/python@2.0.3
 
+# Especifica la tarea a realizar, en este caso ejecutar los test del docker
 jobs:
     test_docker:
       machine:
-        image: ubuntu-2004:202010-01
+        image: bitnami/python:3.9
       steps:
         - checkout
         - run:
@@ -14,7 +16,8 @@ jobs:
             command: |
               docker pull mauronmp/pmp_iv:latest
               docker run -u 1001 -t -v `pwd`:/app/test mauronmp/pmp_iv
-              
+
+# Tareas a realizar, en este caso solo testea el docker
 workflows:
   test_my_app:
     jobs:
