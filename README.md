@@ -78,3 +78,8 @@ Tanto la recopilación de datos, como transformación e IA se especifican en los
     ```
     docker run -u 1001 -t -v `pwd`:/app/test mauronmp/pmp_iv
     ```
+
+# :recycle: CI
+- Se ha creado un fichero yml para que ejecute los test del docker usando circleci.
+ ![Demostración](docs/img/CI_test_demostracion.png)
+
