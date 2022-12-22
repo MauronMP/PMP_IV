@@ -8,7 +8,7 @@ orbs:
 jobs:
     test_docker:
       machine:
-        image: bitnami/python:3.9
+        image: cimg/python:3.9
       steps:
         - checkout
         - run:
