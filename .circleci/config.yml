@@ -1,0 +1,20 @@
+version: 2.1
+orbs:
+  python: circleci/python@2.0.3
+
+jobs:
+    test_docker:
+      machine:
+        image: ubuntu-2004:202010-01
+      steps:
+        - checkout
+        - run:
+            name: "Test docker app"
+            command: |
+              docker pull mauronmp/pmp_iv:latest
+              docker run -u 1001 -t -v `pwd`:/app/test mauronmp/pmp_iv
+              
+workflows:
+  test_my_app:
+    jobs:
+      - test_docker
