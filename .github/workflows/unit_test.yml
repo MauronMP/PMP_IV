@@ -23,7 +23,7 @@ jobs:
           
       - name: Install dependencies
         run: |
-          python3 -m pip install --upgrade pip poetry
+          python3 -m pip install --upgrade pip poetry invoke
           poetry install
       
       - name: Test with invoke
