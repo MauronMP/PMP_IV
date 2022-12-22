@@ -1,0 +1,30 @@
+name: Python project unit test
+
+on: 
+  push:
+
+jobs:
+  push_to_registry:
+    name: Push Docker image to Docker Hub
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.7", "3.8"]
+
+    steps:
+
+      - name: Check out repo PMP_IV
+        uses: actions/checkout@v3
+
+      - name: Set up python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+          
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip poetry invoke
+          poetry install
+      
+      - name: Test with invoke
+        run: invoke test
